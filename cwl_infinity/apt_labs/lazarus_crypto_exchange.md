@@ -70,11 +70,11 @@ CMD ["/bin/bash", "/entrypoint.sh"]
 When our target executes the malicious Docker image, we get a hit back.
 
 ```bash  
-AWS_ACCESS_KEY_ID: <REDACTED>
+AWS_ACCESS...: <REDACTED>
 
-AWS_SECRET_ACCESS_KEY: <REDACTED>
+AWS_SECRET_...: <REDACTED>
       
-AWS_SESSION_TOKEN: <REDACTED>
+AWS_SESSION...: <REDACTED>
 
 S3 Bucket Name: pipeline49578
 ```
@@ -82,9 +82,9 @@ S3 Bucket Name: pipeline49578
 And we export the stolen creds:  
 
 ```bash  
-salamnki@thinking:~$ export AWS_ACCESS_KEY_ID=<REDACTED>     
-salamnki@thinking:~$ export AWS_SECRET_ACCESS_KEY=<REDACTED>
-salamnki@thinking:~$ export <REDACTED>
+salamnki@thinking:~$ export AWS_ACCESS...=<REDACTED>     
+salamnki@thinking:~$ export AWS_SECRET_...=<REDACTED>
+salamnki@thinking:~$ export AWS_SESSION_...<REDACTED>
 ```  
 
 Which results in confirming we're in the context of the target `Developer`.  
