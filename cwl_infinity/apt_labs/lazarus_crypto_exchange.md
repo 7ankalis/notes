@@ -70,11 +70,11 @@ CMD ["/bin/bash", "/entrypoint.sh"]
 When our target executes the malicious Docker image, we get a hit back.
 
 ```bash  
-AWS_ACCESS_KEY_ID: ASIAQ3EGUZMEVRKXAM5D
+AWS_ACCESS_KEY_ID: <REDACTED>
 
-AWS_SECRET_ACCESS_KEY: yUgyw0eLUeCkDsgFJOEwML5h/jjaozlkFNqREuqH
+AWS_SECRET_ACCESS_KEY: <REDACTED>
       
-AWS_SESSION_TOKEN: FwoGZXIvYXdzEAkaDBv50oGjfPGwUcTHkSKBAU9+Hls5lYw3Akc1obOSZ4HSJHRu9DGM1JET4M72FjzFwGcSgZn6fHehiosH9F+i9mDT1TIAAiqLEb3Y0+YtZCtAEARnvBZaBtFO4OW+GyGXZgSQ/4zix6iyHEJQW77j3ONg7wil/xad6orWtUdPukprIFm7pjPFZOBQrc2fz3pu4Siy+eDJBjIoiyMe/+vJ4u9V2kYCQSJBg+d+HYB4b3XLECpasSso6gmQwvSjvEX2UA==
+AWS_SESSION_TOKEN: <REDACTED>
 
 S3 Bucket Name: pipeline49578
 ```
@@ -82,11 +82,9 @@ S3 Bucket Name: pipeline49578
 And we export the stolen creds:  
 
 ```bash  
-salamnki@thinking:~$ export AWS_ACCESS_KEY_ID=ASIAQ3EGUZMEQUNAEORJ
-salamnki@thinking:~$ export AWS_SE
-AWS_SECRET_ACCESS_KEY=  AWS_SESSION_TOKEN=      
-salamnki@thinking:~$ export AWS_SECRET_ACCESS_KEY=ocxFkE7qwc4S025JidVJ0Y/9snOYIBO+dMVjXhW7
-salamnki@thinking:~$ export AWS_SESSION_TOKEN=FwoGZXIvYXdzEAkaDEyoA9evGgKqc1TALSKBAb6Jzar5V/bCix/UIkdkAw/fHjPsO/dpm/Ju3uQ6FmoO5rMi6cMvcs7C4KppzBcA+k0wWs6n4OP8nIoKYr9Db5cntD+Elmth0PLoPmvNJir1mD/vY7kfaKdAwzl5ciMQ47BixrvK2lwrZST/lcTwiV2ETbiWEIj4S5ruPdBjRe+IcCiO/eDJBjIoyXM3/i2z9P9/IugPx28DiHzYQYdaqFfXqaoafQTer+ulJduX+crUkQ==
+salamnki@thinking:~$ export AWS_ACCESS_KEY_ID=<REDACTED>     
+salamnki@thinking:~$ export AWS_SECRET_ACCESS_KEY=<REDACTED>
+salamnki@thinking:~$ export <REDACTED>
 ```  
 
 Which results in confirming we're in the context of the target `Developer`.  
@@ -122,7 +120,7 @@ salamnki@thinking:~/Documents/cwl$ cat config.txt
 # Configuration File for System Operations
 
 # Receiver ID for data exfiltration
-receiverId = attacker_G808IVYUAs
+receiverId = <REDACTED>
 
 # Source configuration
 sourceIp = 192.168.1.1
