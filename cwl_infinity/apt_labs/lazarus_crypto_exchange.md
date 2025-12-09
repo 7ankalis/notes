@@ -93,9 +93,9 @@ Which results in confirming we're in the context of the target `Developer`.
 
 salamnki@thinking:~$ aws sts get-caller-identity
 {
-    "UserId": "AIDAQ3EGUZMEYYGEQCTG4",
+    "UserId": "<REDACTED>",
     "Account": "058264439561",
-    "Arn": "arn:aws:iam::058264439561:user/Developer"
+    "Arn": "arn:aws:iam::058264439561:user/<REDACTED>"
 }
 ```  
 
@@ -144,7 +144,7 @@ dbPassword = securepassword123
 
 # API Settings (Dummy)
 apiUrl = https://api.example.com/endpoint
-apiKey = abcd1234efgh5678
+apiKey = <REDACTED>
 
 # Timeout Settings (Dummy)
 connectionTimeout = 30
